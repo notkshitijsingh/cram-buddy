@@ -1,0 +1,51 @@
+.uploader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.uploader label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.uploader input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.uploader p {
+    margin-top: 10px;
+    color: #0070f3;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+.navButton:hover {
+    background-color: #005bb5;
+}

@@ -1,0 +1,48 @@
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.slide {
+    border: 2px solid #0070f3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+}
+
+.slide h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0070f3;
+}
+
+.slide p {
+    font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+.navButton:hover {
+    background-color: #005bb5;
+}

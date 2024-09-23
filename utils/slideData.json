@@ -1,0 +1,10 @@
+{
+    "slide1": {
+        "title": "Introduction",
+        "body": "Welcome to the presentation!"
+    },
+    "slide2": {
+        "title": "Slide 2",
+        "body": "This is the second slide."
+    }
+}
