@@ -35,15 +35,16 @@ export default function PdfUploader() {
                 onChange={handleFileUpload}
             />
             {pdfFile && <p>Uploaded: {pdfFile.name}</p>}
-
-            <div className={styles.navigation}>
-                <button className={styles.navButton} onClick={goToSlides}>
-                    ← Slides
-                </button>
-                <button className={styles.navButton} onClick={goToQuiz}>
-                    Quiz →
-                </button>
-            </div>
+            {pdfFile &&
+                <div className={styles.navigation}>
+                    <button className={styles.navButton} onClick={goToSlides}>
+                        ← Slides
+                    </button>
+                    <button className={styles.navButton} onClick={goToQuiz}>
+                        Quiz →
+                    </button>
+                </div>
+            }
         </div>
     );
 }

@@ -1,14 +1,72 @@
 {
     "ques1": {
-        "correct": "Option 1",
-        "option2": "Option 2",
-        "option3": "Option 3",
-        "option4": "Option 4"
+        "question": "What is a primary key in a database?",
+        "correct": "A unique identifier for a record",
+        "option2": "A foreign key",
+        "option3": "A key that allows duplicate values",
+        "option4": "A key that identifies relationships between tables"
     },
     "ques2": {
-        "correct": "Option 3",
-        "option1": "Option 1",
-        "option2": "Option 2",
-        "option4": "Option 4"
+        "question": "What is normalization in databases?",
+        "correct": "The process of organizing data to reduce redundancy",
+        "option2": "The process of adding redundant data",
+        "option3": "The process of deleting unnecessary data",
+        "option4": "The process of backing up data"
+    },
+    "ques3": {
+        "question": "Which of the following is part of ACID properties?",
+        "correct": "Atomicity",
+        "option2": "Adaptability",
+        "option3": "Abstraction",
+        "option4": "Archiving"
+    },
+    "ques4": {
+        "question": "Which language is used to interact with relational databases?",
+        "correct": "SQL",
+        "option2": "HTML",
+        "option3": "JavaScript",
+        "option4": "Python"
+    },
+    "ques5": {
+        "question": "What is a foreign key in a database?",
+        "correct": "A key that links two tables together",
+        "option2": "A unique identifier for each record in a table",
+        "option3": "A key that is never null",
+        "option4": "A key that stores file paths"
+    },
+    "ques6": {
+        "question": "What does an Entity-Relationship (ER) diagram represent?",
+        "correct": "Relationships between entities in a database",
+        "option2": "Data flow in a database system",
+        "option3": "Process flows within a software system",
+        "option4": "File organization on disk"
+    },
+    "ques7": {
+        "question": "What is a JOIN operation in SQL?",
+        "correct": "A way to combine rows from two or more tables",
+        "option2": "A way to delete records from a table",
+        "option3": "A method to group data by a column",
+        "option4": "A technique to filter records"
+    },
+    "ques8": {
+        "question": "What does a foreign key reference?",
+        "correct": "A primary key in another table",
+        "option2": "A unique key in the same table",
+        "option3": "A composite key in the same table",
+        "option4": "A primary key in the same table"
+    },
+    "ques9": {
+        "question": "What does BCNF stand for?",
+        "correct": "Boyce-Codd Normal Form",
+        "option2": "Binary-Class Normal Form",
+        "option3": "Basic-Column Normal Form",
+        "option4": "Base-Centered Normal Form"
+    },
+    "ques10": {
+        "question": "Which of the following is one of the ACID properties?",
+        "correct": "Consistency",
+        "option2": "Contingency",
+        "option3": "Concurrency",
+        "option4": "Compression"
     }
 }

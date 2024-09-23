@@ -1,10 +1,42 @@
 {
     "slide1": {
-        "title": "Introduction",
-        "body": "Welcome to the presentation!"
+        "title": "Introduction to DBMS",
+        "body": "A Database Management System (DBMS) is software that interacts with end users, applications, and databases to capture and analyze data. It provides an interface for performing operations such as querying, updating, and managing databases."
     },
     "slide2": {
-        "title": "Slide 2",
-        "body": "This is the second slide."
+        "title": "What is a Database?",
+        "body": "A database is a structured collection of data. It allows for efficient storage, retrieval, and management of data. Examples include relational databases, NoSQL databases, and graph databases."
+    },
+    "slide3": {
+        "title": "Why Use a DBMS?",
+        "body": "DBMS helps manage large amounts of data, ensures data integrity and security, supports concurrent access, and provides backup and recovery options. It reduces data redundancy and ensures consistency."
+    },
+    "slide4": {
+        "title": "Types of DBMS",
+        "body": "There are several types of DBMS, including: 1) Relational DBMS (RDBMS), 2) Hierarchical DBMS, 3) Network DBMS, and 4) Object-oriented DBMS. Each type manages data differently."
+    },
+    "slide5": {
+        "title": "Key Components of DBMS",
+        "body": "The key components include: 1) Database Engine, 2) Database Schema, 3) Query Processor, 4) Transaction Manager, and 5) Storage Manager. These components ensure efficient data management."
+    },
+    "slide6": {
+        "title": "SQL: The Query Language",
+        "body": "Structured Query Language (SQL) is the standard language used to communicate with relational databases. It allows users to query, update, and manage data in a DBMS."
+    },
+    "slide7": {
+        "title": "Normalization in DBMS",
+        "body": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing tables into smaller tables and linking them through relationships."
+    },
+    "slide8": {
+        "title": "ACID Properties",
+        "body": "ACID stands for Atomicity, Consistency, Isolation, and Durability. These are the key properties that ensure safe and reliable transactions in a DBMS."
+    },
+    "slide9": {
+        "title": "ER Diagrams",
+        "body": "Entity-Relationship (ER) diagrams are used to model the relationships between entities in a database. They help in designing a database structure before implementation."
+    },
+    "slide10": {
+        "title": "Conclusion",
+        "body": "In summary, a DBMS is essential for efficient data management, providing features such as data storage, querying, and transaction management. Understanding DBMS concepts is key to working with modern data-driven systems."
     }
 }

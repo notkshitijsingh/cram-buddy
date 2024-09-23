@@ -1,22 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/Quiz.module.css";
 import { useRouter } from "next/navigation";
+
+function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
 
 export default function Quiz({ questions }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
+    const [shuffledOptions, setShuffledOptions] = useState([]);
     const router = useRouter();
+
+    useEffect(() => {
+        const questionData = questions[`ques${currentQuestion + 1}`];
+        const options = [
+            { key: "correct", text: questionData.correct },
+            { key: "option2", text: questionData.option2 },
+            { key: "option3", text: questionData.option3 },
+            { key: "option4", text: questionData.option4 }
+        ];
+        setShuffledOptions(shuffle(options));
+    }, [currentQuestion, questions]);
 
     const handleAnswer = (option) => {
         if (option === "correct") {
-            setScore(score + 1);
+            setScore((prevScore) => prevScore + 1);
         }
+
         if (currentQuestion < Object.keys(questions).length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
-            alert(`Quiz finished! Your score is: ${score}`);
+            setTimeout(() => {
+                alert(`Quiz finished! Your score is: ${score + (option === "correct" ? 1 : 0)}`);
+            }, 100);
         }
     };
 
@@ -32,24 +51,26 @@ export default function Quiz({ questions }) {
 
     return (
         <div className={styles.quiz}>
-        <h2>Question {currentQuestion + 1}</h2>
-        {Object.keys(questionData).map((option, index) => (
-            <button
-            key={index}
-            onClick={() => handleAnswer(option === "correct" ? "correct" : "incorrect")}
-            >
-            {questionData[option]}
-            </button>
-        ))}
+            <h3>Question {currentQuestion + 1}</h3>
+            <h2>{questionData.question}</h2>
 
-        <div className={styles.navigation}>
-            <button className={styles.navButton} onClick={goToHome}>
-            ← Home
-            </button>
-            <button className={styles.navButton} onClick={goToSlides}>
-            Slides →
-            </button>
-        </div>
+            {shuffledOptions.map((option, index) => (
+                <button
+                    key={index}
+                    onClick={() => handleAnswer(option.key)}
+                >
+                    {option.text}
+                </button>
+            ))}
+
+            <div className={styles.navigation}>
+                <button className={styles.navButton} onClick={goToHome}>
+                    ← Home
+                </button>
+                <button className={styles.navButton} onClick={goToSlides}>
+                    Slides →
+                </button>
+            </div>
         </div>
     );
 }
