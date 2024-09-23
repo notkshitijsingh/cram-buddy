@@ -5,11 +5,13 @@
     },
     "slide2": {
         "title": "What is a Database?",
+        "subtitle": "Defining the concept",
         "body": "A database is a structured collection of data. It allows for efficient storage, retrieval, and management of data. Examples include relational databases, NoSQL databases, and graph databases."
     },
     "slide3": {
         "title": "Why Use a DBMS?",
-        "body": "DBMS helps manage large amounts of data, ensures data integrity and security, supports concurrent access, and provides backup and recovery options. It reduces data redundancy and ensures consistency."
+        "body": "DBMS helps manage large amounts of data, ensures data integrity and security, supports concurrent access, and provides backup and recovery options. It reduces data redundancy and ensures consistency.",
+        "image": "https://miro.medium.com/v2/resize:fit:500/1*Nj5FYr6Jc6KJT5F70kbBow.png"
     },
     "slide4": {
         "title": "Types of DBMS",
@@ -17,11 +19,13 @@
     },
     "slide5": {
         "title": "Key Components of DBMS",
+        "subtitle": "What makes a DBMS function",
         "body": "The key components include: 1) Database Engine, 2) Database Schema, 3) Query Processor, 4) Transaction Manager, and 5) Storage Manager. These components ensure efficient data management."
     },
     "slide6": {
         "title": "SQL: The Query Language",
-        "body": "Structured Query Language (SQL) is the standard language used to communicate with relational databases. It allows users to query, update, and manage data in a DBMS."
+        "body": "Structured Query Language (SQL) is the standard language used to communicate with relational databases. It allows users to query, update, and manage data in a DBMS.",
+        "image": "https://miro.medium.com/v2/resize:fit:768/0*ZdA-h8n2irLToXd6.jpeg"
     },
     "slide7": {
         "title": "Normalization in DBMS",
@@ -29,11 +33,13 @@
     },
     "slide8": {
         "title": "ACID Properties",
+        "subtitle": "Ensuring safe transactions",
         "body": "ACID stands for Atomicity, Consistency, Isolation, and Durability. These are the key properties that ensure safe and reliable transactions in a DBMS."
     },
     "slide9": {
         "title": "ER Diagrams",
-        "body": "Entity-Relationship (ER) diagrams are used to model the relationships between entities in a database. They help in designing a database structure before implementation."
+        "body": "Entity-Relationship (ER) diagrams are used to model the relationships between entities in a database. They help in designing a database structure before implementation.",
+        "image": "https://www.ermodelexample.com/wp-content/uploads/2019/03/filehierachy-example-in-er-diagram-wikimedia-commons-for-examples-of-er-diagram.jpg"
     },
     "slide10": {
         "title": "Conclusion",

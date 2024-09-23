@@ -1,48 +1,123 @@
 .slideshow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f9f9f9;
 }
 
 .slide {
-    border: 2px solid #0070f3;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 60vh; 
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Responsive Typography */
 .slide h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #0070f3;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.slide h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .slide p {
-    font-size: 18px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.slide img {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.console {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.prevButton, .nextButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prevButton:disabled, .nextButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.prevButton:hover:not(:disabled), .nextButton:hover:not(:disabled) {
+  background-color: #005bb5;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .navButton {
-    padding: 10px 20px;
-    border: none;
-    background-color: #0070f3;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 150px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .navButton:hover {
-    background-color: #005bb5;
+  background-color: #005bb5;
+}
+
+.themeSelector {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Theme Styles */
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.sunset {
+  background-color: #feb47b;
+  color: white;
+}
+
+.forest {
+  background-color: #34495e;
+  color: #ecf0f1;
 }
