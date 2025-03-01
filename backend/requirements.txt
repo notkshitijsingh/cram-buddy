@@ -1,0 +1,6 @@
+Flask
+Flask-RESTful
+Werkzeug
+google
+pdfplumber
+yaml

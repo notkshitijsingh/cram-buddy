@@ -1,0 +1,33 @@
+Chapter 1: Introduction to VanGogh Image Colorization
+
+The use of generative adversarial networks (GANs) as a solution to image-to-image translation problems, specifically converting black and white images to colored images, is explored.  The advantages of using GANs, including self-supervised training and the ability to work with a CNN-generator, are highlighted. Existing APIs like chroma and DeOldify are mentioned, but their limitations (paywalls and focus on supervised learning) are noted. The project aims to create an efficient, user-intervention-free colorization approach using a GAN with a U-Net based generator and a Markovian discriminator.  The project will also utilize pre-existing libraries like fastai and the Res-Net architecture to enhance results.  The final code is available at [link].
+
+
+Chapter 2: Related Work in Image Colorization
+
+This chapter reviews existing image-to-image translation solutions, focusing on those that use similar approaches to the proposed method.  Richard Zhang's model [3] (Figure 1), using an encoder-decoder CNN, is discussed as a foundational model.  Satoshi Iizuka's model [2] (Figure 2), which builds upon Zhang's work by incorporating two layers for object and pattern identification, is also analyzed. This model's influence on the chosen GAN approach is explained. The advantages of using the La*b* color space for efficiency are presented.
+
+
+Chapter 3: Proposed System Architecture
+
+This section details the theoretical aspects of the proposed colorization system.  The advantages of using the La*b* color space over RGB are discussed, highlighting the reduction in computational complexity from a rank-3 to a rank-2 matrix.  The architecture of the U-Net based generator is explained, emphasizing the use of skip connections to maintain image quality. The loss function, a combination of adversarial loss and mean absolute error (L1 loss), is defined.  The choice of L1 loss over mean squared error (L2 loss) is justified to reduce the generation of greyish images. The Markovian discriminator (PatchGAN) [1] is described, explaining its approach of processing images in small patches.
+
+
+Chapter 4: Implementation Details
+
+This chapter describes the implementation details of the proposed system.  The COCO 2017 dataset is chosen for training due to its size and accessibility. The training process, involving splitting the dataset into training and validation sets, is explained.  The training process and the saving of weights after approximately 21 days of training are described.  Mention is made of utility functions used for tracking and counting.
+
+
+Chapter 5: Results and Discussion
+
+This section presents the results of the VanGogh colorization model. The quality of the colorized images is compared with DeOldify, noting both successes and shortcomings.  The results show that VanGogh is a viable colorization solution. While comparable to DeOldify in many cases, it sometimes outperforms it or is outperformed due to the significant difference in training time.
+
+
+Chapter 6: Conclusion and Future Work
+
+This chapter summarizes the findings of the research. The success of using GANs for image colorization is confirmed. Remaining challenges are acknowledged, such as handling images like paintings.  Areas for future improvements, such as training with a larger and more specialized dataset, are proposed. The overall success of VanGogh in terms of quality, speed, and color accuracy is reiterated.  Acknowledgements are given to relevant researchers and developers whose works influenced this project.
+
+
+Chapter 7: References
+
+This chapter provides a list of cited references.

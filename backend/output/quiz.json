@@ -1,0 +1,69 @@
+{
+    "Chapter 1": [
+        {
+            "question": "What is the primary limitation of existing APIs like chroma and DeOldify, as discussed in the chapter?",
+            "correct": "They rely on supervised learning and/or have paywalls.",
+            "option2": "They are incompatible with U-Net based generators.",
+            "option3": "They lack the ability to handle black and white images.",
+            "option4": "They produce low-resolution colorized images."
+        },
+        {
+            "question": "What is the primary limitation of existing APIs like chroma and DeOldify, as discussed in the chapter?",
+            "correct": "They rely on supervised learning and/or have paywalls.",
+            "option2": "They are incompatible with U-Net based generators.",
+            "option3": "They lack the ability to handle black and white to color image translation.",
+            "option4": "They are too computationally expensive for practical use."
+        }
+    ],
+    "Chapter 2": [
+        {
+            "question": "Which of the following models is described as foundational to the proposed method in this chapter?",
+            "correct": "Richard Zhang's encoder-decoder CNN model [3]",
+            "option2": "Satoshi Iizuka's object and pattern identification model [2]",
+            "option3": "A GAN-based model using the La*b* color space",
+            "option4": "A model not explicitly mentioned in the chapter"
+        },
+        {
+            "question": "Which of the following models is described as foundational to the proposed image-to-image translation method in this chapter?",
+            "correct": "Richard Zhang's encoder-decoder CNN model [3]",
+            "option2": "Satoshi Iizuka's two-layer object and pattern identification model [2]",
+            "option3": "A GAN-based model using the La*b* color space",
+            "option4": "A model not explicitly mentioned in the chapter"
+        }
+    ],
+    "Chapter 3": [
+        {
+            "question": "Why was the L1 loss function preferred over the L2 loss function in the proposed colorization system?",
+            "correct": "To reduce the generation of greyish images",
+            "option2": "To increase computational efficiency",
+            "option3": "To improve the performance of the Markovian discriminator",
+            "option4": "To simplify the architecture of the U-Net generator"
+        },
+        {
+            "question": "According to the text, what key advantage does the La*b* color space offer over RGB in the proposed colorization system?",
+            "correct": "Reduced computational complexity from a rank-3 to a rank-2 matrix",
+            "option2": "Improved color accuracy for grayscale images",
+            "option3": "Simplified U-Net architecture design",
+            "option4": "Elimination of the need for a discriminator network"
+        }
+    ],
+    "Chapter 4": [
+        {
+            "question": "Which dataset was primarily used for training the system described in this chapter?",
+            "correct": "COCO 2017",
+            "option2": "ImageNet",
+            "option3": "Pascal VOC",
+            "option4": "MNIST"
+        },
+        {
+            "question": "What dataset was primarily used for training the system described in this chapter?",
+            "correct": "COCO 2017",
+            "option2": "ImageNet",
+            "option3": "Pascal VOC",
+            "option4": "MNIST"
+        }
+    ],
+    "Chapter 5": [],
+    "Chapter 6": [],
+    "Chapter 7": []
+}
