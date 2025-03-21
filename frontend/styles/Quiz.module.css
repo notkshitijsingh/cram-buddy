@@ -10,47 +10,51 @@
     margin-bottom: 20px;
 }
 
-.quiz button {
+.quizButton {
     padding: 10px 20px;
     margin: 10px 0;
     border: none;
-    background-color: #0070f3;
+    background-color: #222831;
     color: white;
     font-size: 18px;
     border-radius: 5px;
-    width: 100%;
+    width: 50vw;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.quiz button:hover {
-    background-color: #005bb5;
+.quizButton:hover {
+    background-color: #00ADB5;
 }
 
-.quiz button:disabled {
+.quizButton:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
 
 .navigation {
-    display: flex;
+    position: absolute;
+    bottom: 100px;
+    padding-block: 100px;
     justify-content: space-between;
-    width: 100%;
+    display: flex;
+    width: 50vw;
+    gap: 10rem;
     margin-top: 20px;
 }
 
 .navButton {
     padding: 10px 20px;
     border: none;
-    background-color: #0070f3;
+    background-color: #00ADB5;
     color: white;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 50vh;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 150px;
 }
 
 .navButton:hover {
-    background-color: #005bb5;
+    background-color: #004e52;
 }

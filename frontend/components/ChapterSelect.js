@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+import Image from "next/image";
+import bookwormImage from '/public/assets/bookworm.png';
+
 import styles from "../styles/PdfUploader.module.css";
 
 export default function ChapterSelect({ chapters }) {
@@ -50,9 +53,16 @@ export default function ChapterSelect({ chapters }) {
 
   return (
     <>
+    <div className='header'>
+      <Image 
+        src={bookwormImage}
+        alt='Cram Buddy'
+        width={40} height={40}/>
+      <span className='header-text'>Chapters</span>
+    </div>
     <div className="p-4">
       <h1 className="text-xl font-semibold mb-4">Select Chapters</h1>
-      <ul className="space-y-2 list-none">
+      <ul className="space-y-2 list-none pl-0">
         {chapters.map((chapter, index) => (
           <li key={index} className="flex items-center space-x-2">
             <input

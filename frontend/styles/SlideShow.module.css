@@ -5,7 +5,8 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: #f9f9f9;
+  margin-top: -100px;
+  background-color: #EEEEEE;
 }
 
 .slide {
@@ -15,7 +16,7 @@
   justify-content: center;
   width: 60vw;
   height: 60vh; 
-  background-color: white;
+  background-color: #EEEEEE;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -55,7 +56,7 @@
 .prevButton, .nextButton {
   padding: 10px 20px;
   border: none;
-  background-color: #0070f3;
+  background-color: #222831;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -64,7 +65,7 @@
 }
 
 .prevButton:disabled, .nextButton:disabled {
-  background-color: #ccc;
+  background-color: #6b6b6b;
   cursor: not-allowed;
 }
 
@@ -73,19 +74,21 @@
 }
 
 .navigation {
+  position: absolute;
+  bottom: 50px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80vw;
   margin-top: 20px;
 }
 
 .navButton {
   padding: 10px 20px;
   border: none;
-  background-color: #0070f3;
-  color: white;
+  background-color: #00ADB5;
+  color: #EEEEEE;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 50vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

@@ -67,8 +67,8 @@ export default function PdfUploader() {
         <>
         <div className={styles.uploader}>
             <h2>Upload Your PDF</h2>
-            <input type="file" accept="application/pdf" onChange={handleFileChange} />
-            <button onClick={handleUpload}>Upload</button>
+            <input type="file" accept="application/pdf" onChange={handleFileChange}/>
+            <button className={styles.roundButton} onClick={handleUpload}>Upload</button>
             {uploadStatus && <p>{uploadStatus}</p>}
         </div>
         {uploadStatus ? 

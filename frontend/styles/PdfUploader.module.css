@@ -3,12 +3,13 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: 2px dashed #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
-    width: 80%;
+    background-color: #393E46;
+    width: 20rem;
+    height: 20rem;
+    color: white;
     margin: 0 auto;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .uploader label {
@@ -19,38 +20,50 @@
 .uploader input {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 50vh;
     cursor: pointer;
 }
 
 .uploader p {
     margin-top: 10px;
-    color: #0070f3;
+    color: #00ADB5;
 }
 
 .uploader h2 {
-    color: #0070f3;
+    color: #00ADB5;
 }
     
 .navigation {
+    position: absolute;
+    bottom: 1rem;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    gap: 4rem;
 }
 
 .navButton {
     padding: 10px 20px;
     border: none;
-    background-color: #0070f3;
+    background-color: #00ADB5;
     color: white;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 50vh;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 150px;
 }
 
 .navButton:hover {
-    background-color: #005bb5;
+    background-color: #00ADB5;
+}
+
+.roundButton {
+    border-radius: 50vh;
+    border: 0 solid #00ADB5;
+    background: #00ADB5;
+    color: white;
+    padding-inline: 8%;
+    padding-block: 2%;
+    cursor: pointer;
 }

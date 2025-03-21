@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Quiz.module.css";
 import { useRouter } from "next/navigation";
 
+import Image from 'next/image';
+import bookwormImage from '/public/assets/bookworm.png';
+
 import selected from "@/utils/selected.json";
 
 function shuffle(array) {
@@ -66,27 +69,37 @@ export default function Quiz({ questions }) {
     const questionData = allQuestions[currentQuestion];
 
     return (
-        <div className={styles.quiz}>
-            <h3>Question {currentQuestion + 1} of {allQuestions.length}</h3>
-            <h2>{questionData.question}</h2>
-
-            {shuffledOptions.map((option, index) => (
-                <button
-                    key={index}
-                    onClick={() => handleAnswer(option.key)}
-                >
-                    {option.text}
-                </button>
-            ))}
-
-            <div className={styles.navigation}>
-                <button className={styles.navButton} onClick={goToHome}>
-                    ← Home
-                </button>
-                <button className={styles.navButton} onClick={goToSlides}>
-                    Slides →
-                </button>
+        <>
+            <div className='header'>
+                <Image 
+                    src={bookwormImage}
+                    alt='Cram Buddy'
+                    width={40} height={40}/>
+                <span className='header-text'>Quiz</span>
             </div>
-        </div>
+            <div className={styles.quiz}>
+                <h3>Question {currentQuestion + 1} of {allQuestions.length}</h3>
+                <h2>{questionData.question}</h2>
+
+                {shuffledOptions.map((option, index) => (
+                    <button
+                        className={styles.quizButton}
+                        key={index}
+                        onClick={() => handleAnswer(option.key)}
+                    >
+                        {option.text}
+                    </button>
+                ))}
+
+                <div className={styles.navigation}>
+                    <button className={styles.navButton} onClick={goToHome}>
+                        ← Home
+                    </button>
+                    <button className={styles.navButton} onClick={goToSlides}>
+                        Slides →
+                    </button>
+                </div>
+            </div>
+        </>
     );
 }
